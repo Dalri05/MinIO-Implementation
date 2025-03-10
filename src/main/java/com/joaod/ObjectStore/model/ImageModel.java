@@ -2,8 +2,11 @@ package com.joaod.ObjectStore.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @Entity
 public class ImageModel {
 
@@ -11,6 +14,5 @@ public class ImageModel {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private Long uuid;
+    private String uuid;
 }

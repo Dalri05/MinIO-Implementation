@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class MinioClientConfig {
     @Bean
-    public MinioClient minioClient() {
+    MinioClient minioClient() {
         return MinioClient.builder()
                 .endpoint("http://localhost:9000")
                 .credentials("ROOTNAME",
